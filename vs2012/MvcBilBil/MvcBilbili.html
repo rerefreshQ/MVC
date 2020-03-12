@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width， initial-scale=1.0">
+    <title></title>
+
+    <style>
+        table， td， th {
+            border: 1px solid #000;
+            margin: 10px;
+        }
+
+        td， th {
+            padding: 5px 10px 5px 10px;
+        }
+
+        tr:nth-child(odd) td {
+            background-color: lightblue
+        }
+
+        img {
+            display: block;
+            border: 1px solid #000;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        .code {
+            background-color: skyblue;
+            margin: 15px;
+            padding: 10px;
+            box-shadow: 5px 5px 10px 3px;
+        }
+
+        .code:hover {
+            box-shadow: 0px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.bilibili.com/video/av11473628?p=1">bilibili 上的视频教程笔记</a><br>
+    <h2>概念</h2>
+    三层模式：是软件工程中的程序设计模式，是MVC设计思想的一种实现。<br>
+    随着技术的发展，现在基本上已经将MNVC模式等同于三层模式<br>
+    三层模式包括：U层，业务逻辑层，数据访问层，模型层<br>
+    如果要严格区分，UI层指 Vew与 Controller，业务逻辑层、数据访问层、模型层都被包括在 Model 中<br>
+    很多公司都在努力让自己的产品遵循MVC思想，其中微软的 Asp.Net MVC就是其中一款，这是一款对输入、输出进行分离的 UI 层框架
+    <br>
+    Asp.net MVC 是微软2009对外公布的第一个开源的表示层框架，这是微软的第一个开源项目。<br>
+    它将 Web 应用程序分成三个主要组件即：视图(VieW)、控制器( Controller)、模型( Model)<br>
+    Razor 是 MVC3.0 以后的视图引擎提供了 Razor、Aspx 两种方式<br>
+    参考网址 http://www.asp.net/mvc<br>
+    <br>
+    下图中 <span class="red">红色 显示 Model</span> 和 <span class="blue">蓝色数据库 Model</span>，实际应用中用 <span class="red">显示 Model
+    </span> 显示数据，但实际上2者是不同的。
+    <img src="images/P1.jpg" alt="">
+
+    <h2>新建 MVC 项目(P2)</h2>
+    Razor 视图引擎(即在网页上以 @的方式写 c#代码)<br>
+    @*服务端注释，并不会在客户的查看网页源代码中出现*@<br>
+    &lt;!--客户端注释,客户的查看网页源代码会看到--&gt;<br>
+
+    <img src="images/P2.jpg" alt="">
+    <h3>Global.asax.cs 的 Application_Start()方法 要执行的代码 对 App_Start\的类 封装</h3>
+    <img src="images/P2-1.jpg" alt="">
+
+    <h3>
+        创建空白的 Controllers -> HomeControllers.cs <br>
+        <span class="red">
+            控制器内只定义方法就可以了<br>
+            这些方法被称为"行为(Action)" 
+        </span>  
+    </h3>
+    <img src="images/P2-2.jpg" alt="">
+
+    <h3>添加 Index 视图(使用 Rzaor 视图引擎)</h3>
+    看到<a href="https://www.bilibili.com/video/av11473628?p=2">10:52</a>
+</body>
+
+</html>

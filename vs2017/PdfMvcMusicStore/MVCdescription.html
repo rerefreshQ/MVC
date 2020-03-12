@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVC 资料文档</title>
+    <link rel="shortcut icon" href="S.ico" />
+    <base target="_blank" />
+
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid #000;
+            margin: 10px;
+        }
+
+        td,
+        th {
+            padding: 5px 10px 5px 10px;
+        }
+
+        tr:nth-child(odd) td {
+            background-color: lightblue
+        }
+
+        img {
+            display: block;
+            border: 1px solid #000;
+        }
+
+        .red{
+            color: red;
+        }
+
+        .code{
+            background-color: skyblue;
+            margin: 15px;
+            padding: 10px;
+            box-shadow: 5px 5px 10px 3px;
+        }
+        .code:hover{
+            box-shadow: 0px 0px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h2>VS2017 快捷键</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>快捷键</th>
+                <th>功能</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Ctrl + Enter</td>
+                <td>在当前行插入空行</td>
+            </tr>
+
+            <tr>
+                <td>Ctrl + Shift + Enter</td>
+                <td>在当前行下方插入空行；</td>
+            </tr>
+
+            <tr>
+                <td>Ctrl + 空格键</td>
+                <td>使用 IntelliSense（智能感知）自动完成；</td>
+            </tr>
+
+            <tr>
+                <td>Alt + Shift + 箭头键(←,↑,↓,→) </td>
+                <td>选择代码的自定义部分；</td>
+            </tr>
+
+            <tr>
+                <td>Ctrl + }</td>
+                <td>匹配大括号、括号；</td>
+            </tr>
+
+            <tr>
+                <td>Ctrl + Shift +} </td>
+                <td>在匹配的括号、括号内选择文本；</td>
+            </tr>
+
+            <tr>
+                <td>Ctrl + Shift + S </td>
+                <td>保存所有文件和项目；</td>
+            </tr>
+
+            <tr>
+                <td>Ctrl + K，Ctrl + C </td>
+                <td>注释选定行；</td>
+            </tr>
+
+            <tr>
+                <td>Ctrl + K，Ctrl + U</td>
+                <td>取消选定行的注释；</td>
+            </tr>
+
+            <tr>
+                <td>Ctrl + K，Ctrl + D</td>
+                <td>正确对齐所有代码；</td>
+            </tr>
+
+            <tr>
+                <td>Ctrl + Delete</td>
+                <td>删除光标右侧的所有字。</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <h2>ASP.NET MVC 5高级编程.pdf 页码对应：</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>说明</th>
+                <th>PDF 自选页</th>
+                <th>页面右下角对应页码</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>目录</td>
+                <td>14</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>第二章 控制器</td>
+                <td>42</td>
+                <td>23</td>
+            </tr>
+
+            <tr>
+                <td>
+                    利用方法 HttpUtility.HtmlEncode 来预处理用户输入<br>
+                    这样就能阻止用户用链接向视图中注入 JavaScript代码 或 HTML 标记<br>
+                    比如 //Store/Browse?Genre=&lt;script&gt;window.location='http://hacker.example.com'&lt;/script&gt;
+                </td>
+                <td>53</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h2>ASP.NET MVC 应用程序结构(PDF-P39)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>目录</th>
+                <th>用途</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>/Controllers</td>
+                <td>处理 URL 请求的 Controller 类</td>
+            </tr>
+
+            <tr>
+                <td>/Models</td>
+                <td>表示和操纵数据以及业务对象的类</td>
+            </tr>
+
+            <tr>
+                <td>/Views</td>
+                <td>负责呈现输出结果(如HTML)的 UI 模板文件</td>
+            </tr>
+
+            <tr>
+                <td>/Script</td>
+                <td>JavaScript 库文件和脚本(.js)</td>
+            </tr>
+
+            <tr>
+                <td>/fonts</td>
+                <td>Bootstrap 模板系统包含的一些自定义 Web 字体</td>
+            </tr>
+
+            <tr>
+                <td>/Content</td>
+                <td>CSS、图像和其他站点内容，而非脚本</td>
+            </tr>
+
+            <tr>
+                <td>/App_Data</td>
+                <td>存储想要读取/写入的数据文件</td>
+            </tr>
+
+            <tr>
+                <td>/App_Start</td>
+                <td>功能的配置代码，如路由、捆绑和 Web API</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>建立及配置 MusicStore 项目(PDF-P37)</h2>
+    <img src="images/P37.jpg" alt="">
+
+
+    <table>
+        <tbody>
+            <tr>
+                <td rowspan="3">建立 StoreController 里面需要3个方法：</td>
+                <td>index</td>
+                <td>索引页面列出商店里包含的音乐类型</td>
+            </tr>
+
+            <tr>
+                <td>Browse</td>
+                <td>列出所有音乐专辑的页面</td>
+            </tr>
+
+            <tr>
+                <td>Details</td>
+                <td>列出有关该专辑所有信息的页面</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>控制器中的参数--PDF52</h3>
+    <table>
+        <thead>
+
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Browse 方法修改为：检索从 URL 传过来的查询字符串值</td>
+                <td>http://localhost:28136/store/Browse?genre=xx</td>
+            </tr>
+
+            <tr>
+                <td>
+                    Details 方法修改为：使其读取和显示一个名为ID的输入参数。<br>
+                    这里不像前面的方法那样把 ID 值作为一个查询字符串参数，而是将 ID 值直接嵌入到 URL 中。<BR>
+                    ASP.NET MVC 默认路由约定，如果操作方法中有名为 ID 的参数，那么 APS.NET MVC 会自动将这个 URL 片段作为参数传递过来。
+                </td>
+
+                <td>
+                    http://localhost:28136/store/Details/5
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>视图--PDF59</h3>
+    <div class="code">
+        public ActionResult Index()<br>
+        {<br>
+            return View("NotIndex");<br>
+        }
+    </div>
+
+
+    在其他一些应用中，我们可能需要指定完全位于不同目录结构中的视图。针对这种情况我们可以使用~符号的语法来提供视图的完整路径：<br>
+    <span class="red">(为了在查找视图时避开视图引擎的内部查找机制，在使用这种语法时，性友提供视图的文件扩展名)</span>
+    <div class="code">
+        public ActionResult Index()<br>
+        {<br>
+            return View("~/Views/Example/Index.cshtml");<br>
+        }<br>
+    </div>
+
+</body>
+
+</html>
